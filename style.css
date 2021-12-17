@@ -345,9 +345,9 @@ img {
 }
 
 @media (max-width: 550px) {
-  /* .conteudo {
+  .conteudo {
     grid-template-columns: 1fr;
-  } */
+  }
 
     .cor-texto-2 {
       max-width: initial;
