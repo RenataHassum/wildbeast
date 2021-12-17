@@ -293,10 +293,10 @@ img {
 
 @keyframes seta {
   from {
-    right: 80px;
+    right: 30px;
   }
   to {
-    right: 70px;
+    right: 20px;
   }
 }
 
@@ -312,34 +312,36 @@ img {
     gap: 15px;
   }
   
-  .estrutura {  
-    grid-template-areas: 
-    "header header header"
-    "sidenav sidenav sidenav"
-    "conteudo conteudo conteudo"
-    "anuncios anuncios anuncios"
-    "footer footer footer";
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'header'
+      'sidenav'
+      'conteudo'
+      'anuncios'
+      'footer';
   }
   
   .sidenav {
     position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     padding-bottom: 0px;
   }
   
   .sidenav ul {
     display: flex;
     gap: 30px;
-    overflow-x: auto;
   }
 
   .sidenav::after {
-    content: "→";
+    content: '→';
     position: absolute;
     top: 5px;
-    right: 80px;
+    right: 30px;
     color: rgba(0, 0, 0, 0.3);
-    animation: 0.5s ease-in 0s infinite alternate none running seta;
-  }
+    animation: seta 0.5s ease-in 0s infinite alternate;
 }
 
 @media (max-width: 550px) {
