@@ -20,6 +20,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
   width: 100%;
   border-radius: 5px;
 }
@@ -29,7 +30,7 @@ img {
 }
 
 .cor-texto {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -346,9 +347,13 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .conteudo p {
+    max-width: 35ch;
+  }
+
     .cor-texto-2 {
       max-width: initial;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .informacoes p + p {
