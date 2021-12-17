@@ -292,10 +292,10 @@ img {
 
 @keyframes seta {
   from {
-    right: 60px;
+    right: 80px;
   }
   to {
-    right: 50px;
+    right: 70px;
   }
 }
 
@@ -335,7 +335,7 @@ img {
     content: "→";
     position: absolute;
     top: 5px;
-    right: 60px;
+    right: 80px;
     color: rgba(0, 0, 0, 0.3);
     animation: 0.5s ease-in 0s infinite alternate none running seta;
   }
@@ -344,6 +344,7 @@ img {
 @media (max-width: 550px) {
   .conteudo {
     grid-template-columns: auto;
+    padding: 0px 5px;
   }
 
     .cor-texto-2 {
