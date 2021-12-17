@@ -348,12 +348,14 @@ img {
   }
 
   .conteudo p {
-    max-width: 35ch;
+    max-width: 33ch;
   }
 
     .cor-texto-2 {
       max-width: initial;
       font-size: 1.2rem;
+      background: brown;
+
     }
 
     .informacoes p + p {
